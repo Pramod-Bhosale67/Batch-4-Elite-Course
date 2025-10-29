@@ -2,9 +2,12 @@
 using namespace std;
 
 
+// Single Inheritance
+
+
 // Base class
 class Person{
-public:
+protected:
 
 	int age;
 	string name;
@@ -12,7 +15,7 @@ public:
 };
 
 // Derived Class
-class Sahil: public Person{
+class Sahil: protected Person{
 
 public:
 	Sahil(){
@@ -28,35 +31,14 @@ public:
 	}
 };
 
-class Prachi: public Person{
-
-public:
-	Prachi(){
-		name = "Prachi";
-		age = 20;
-		marks = 60;
-	}
-
-
-	void showDetails(){
-		cout << "Name of the person: " << name << "\n";
-		cout << "Age of the person: " << age << "\n";
-		cout << "Marks of the person: " << marks << "\n";
-	}
-
-}
 
 
 int main(){
 
 	Sahil sahil;
+
 	sahil.showDetails();
 
-	cout << "\n";
-
-	Prachi prachi;
-	prachi.showDetails();
-	
 
 	cout << "\n";
 

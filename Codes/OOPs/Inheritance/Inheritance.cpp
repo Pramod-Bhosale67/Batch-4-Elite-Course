@@ -2,6 +2,7 @@
 using namespace std;
 
 
+
 // Base class
 class Person{
 public:
@@ -44,7 +45,7 @@ public:
 		cout << "Marks of the person: " << marks << "\n";
 	}
 
-}
+};
 
 
 int main(){
